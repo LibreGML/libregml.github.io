@@ -1,0 +1,297 @@
+# GeMoLin
+
+> TZGML葛墨林云笔记, 整理Java、Springboot、Vue等技术栈的笔记与价格行为学交易心得，记录技术成长与个人思考的个人博客
+
+✨ TZ葛墨林个人博客、云笔记、日记，记录我人生的点点滴滴，欢迎一起聊天噢！
+
+## Table of Contents
+
+### base
+
+- [javabase](/java/base/javabase.md)
+
+### collection
+
+- [集合](/java/collection/javajihe.md)
+
+### object
+
+- [javaobject](/java/object/javaobject.md)
+
+### special
+
+- [线程](/java/special/javaapi.md)
+
+### 基础知识
+
+- [布鲁克斯交易课程：核心术语与基本概念](/price/01-terminology.md)
+- [Al Brooks 的个人图表设置](/price/04-my-setup.md)
+- [程序化交易 (Program Trading)](/price/05-program-trading.md)
+- [成功交易员的性格特征](/price/06-personality-traits.md)
+
+#### 图表基础和价格行为
+
+- [图表与市场基础](/price/02-chart-basics/02a.md)
+- [成交量与新闻分析](/price/02-chart-basics/02b.md)
+- [价格行为基础与痛苦交易](/price/02-chart-basics/02c.md)
+- [交易的真相：告别形态与指标](/price/02-chart-basics/02d.md)
+
+#### 外汇基础
+
+- [外汇交易基础](/price/03-forex-basics/03a.md)
+- [外汇交易基础（第二部分）](/price/03-forex-basics/03b.md)
+- [外汇基础：点值、平台与市场比较](/price/03-forex-basics/03c.md)
+- [外汇基础（第四部分）：K线图与交易风格](/price/03-forex-basics/03d.md)
+- [外汇保证金与盈亏计算](/price/03-forex-basics/03e.md)
+
+### 交易技巧
+
+- [圆弧顶与圆弧底](/price/28-rounded-tops-bottoms.md)
+
+#### 入门
+
+- [步入交易生涯（第一部分）](/price/07-starting-out/07a.md)
+- [开启交易生涯（第二部分）：情绪管理与交易进阶](/price/07-starting-out/07b.md)
+
+#### K线、交易机会和信号K线
+
+- [K 线、交易机会与信号 K 线（第一部分）](/price/08-candles-setups/08a.md)
+- [K 线信号解读（第二部分）](/price/08-candles-setups/08b.md)
+- [窄震荡区间与突破模式](/price/08-candles-setups/08c.md)
+- [评估交易机会：信号、背景与确认](/price/08-candles-setups/08d.md)
+
+#### 回调和数K线
+
+- [回调与数 K 线（第一部分）](/price/09-pullbacks-counting/09a.md)
+- [回调与数 K 线（第二部分）](/price/09-pullbacks-counting/09b.md)
+- [回调与数 K 线（第三部分）](/price/09-pullbacks-counting/09c.md)
+
+#### 买压和卖压
+
+- [买压与卖压（第一部分）](/price/10-buying-selling-pressure/10a.md)
+- [买压与卖压（第二部分）](/price/10-buying-selling-pressure/10b.md)
+
+#### 缺口
+
+- [缺口 (第一部分)](/price/11-gaps/11a.md)
+- [缺口分析（第二部分）：均线缺口与竭尽型缺口](/price/11-gaps/11b.md)
+- [缺口（第三部分）](/price/11-gaps/11c.md)
+- [缺口：趋势强度与阶梯模式](/price/11-gaps/11d.md)
+
+#### 市场周期
+
+- [市场周期（第一部分）](/price/12-market-cycle/12a.md)
+- [市场周期：趋势、震荡与关键术语](/price/12-market-cycle/12b.md)
+- [市场周期（第三部分）](/price/12-market-cycle/12c.md)
+
+#### Always In
+
+- [单边趋势（第一部分）](/price/13-always-in/13a.md)
+- [交易单边趋势 (Spike and Channel)](/price/13-always-in/13b.md)
+- [单边趋势中的交易 (第三部分)](/price/13-always-in/13c.md)
+
+#### 趋势
+
+- [趋势入门](/price/14-trends/14a.md)
+- [趋势（第二部分）](/price/14-trends/14b.md)
+- [趋势的类型、陷阱与突破（第三部分）](/price/14-trends/14c.md)
+- [三种趋势类型](/price/14-trends/14d.md)
+- [强趋势：窄通道与微回调](/price/14-trends/14e.md)
+
+#### 突破
+
+- [突破导论](/price/15-breakouts/15a.md)
+- [突破（第二部分）：跟随与确认](/price/15-breakouts/15b.md)
+- [突破（第三部分）：第二段行情与区间突破](/price/15-breakouts/15c.md)
+- [突破与陷阱 (第四部分)](/price/15-breakouts/15d.md)
+- [突破（第五部分）：缺口、强度与回测](/price/15-breakouts/15e.md)
+- [失败的突破：趋势恢复还是反转](/price/15-breakouts/15f.md)
+- [突破陷阱与反向交易](/price/15-breakouts/15g.md)
+- [惊喜K线：识别与交易策略](/price/15-breakouts/15h.md)
+
+#### 通道
+
+- [通道基础与画线原则](/price/16-channels/16a.md)
+- [通道的画法与交易策略](/price/16-channels/16b.md)
+- [通道（第三部分）](/price/16-channels/16c.md)
+- [通道详解（第四部分）](/price/16-channels/16d.md)
+- [通道与市场周期](/price/16-channels/16e.md)
+- [通道交易策略与市场周期](/price/16-channels/16f.md)
+
+#### 窄通道和微通道
+
+- [窄通道与微通道 (第一部分)](/price/17-tight-channels/17a.md)
+- [窄通道与微通道（第二部分）](/price/17-tight-channels/17b.md)
+
+#### 震荡区间
+
+- [震荡区间（第一部分）](/price/18-trading-ranges/18a.md)
+- [震荡区间交易策略（第二部分）](/price/18-trading-ranges/18b.md)
+- [震荡区间与波段分析 (第三部分)](/price/18-trading-ranges/18c.md)
+- [窄震荡区间](/price/18-trading-ranges/18d.md)
+- [震荡区间交易：磁铁效应与反向操作](/price/18-trading-ranges/18e.md)
+- [震荡区间交易策略总结](/price/18-trading-ranges/18f.md)
+
+#### 支撑和阻力
+
+- [支撑与阻力（第一部分）](/price/19-support-resistance/19a.md)
+- [支撑与阻力（第二部分）](/price/19-support-resistance/19b.md)
+- [支撑与阻力（第三部分）](/price/19-support-resistance/19c.md)
+- [支撑与阻力（第四部分）- 关键收盘价与突破回测](/price/19-support-resistance/19d.md)
+- [支撑与阻力（第五部分）- 综合应用与系列总结](/price/19-support-resistance/19e.md)
+
+#### 测量移动
+
+- [移动测量目标位（第一部分）：第一段 = 第二段 (Leg 1 = Leg 2)](/price/20-measured-moves/20a.md)
+- [移动测量目标位（第二部分）：基于震荡区间与突破高度的MM](/price/20-measured-moves/20b.md)
+
+#### 反转
+
+- [市场反转（第一部分）：定义、分类与"噪音"辨析](/price/21-reversals/21a.md)
+- [市场反转（第二部分）：交易特性、入场时机与杯柄形态](/price/21-reversals/21b.md)
+- [市场反转（第三部分）：新手误区、买卖压力与嵌套结构](/price/21-reversals/21c.md)
+- [市场反转（第四部分）：胜率、目标与双重顶/底结构](/price/21-reversals/21d.md)
+
+#### 主要趋势反转
+
+- [大反转（第一部分）](/price/22-major-trend-reversals/22a.md)
+- [大反转的构成要素](/price/22-major-trend-reversals/22b.md)
+- [大反转与结构（第三部分）](/price/22-major-trend-reversals/22c.md)
+- [大反转（第四部分）：筑底、头肩形与失败反转](/price/22-major-trend-reversals/22d.md)
+
+#### 最终旗形
+
+- [末端旗形（第一部分）](/price/23-final-flags/23a.md)
+- [末端旗形 (第二部分)](/price/23-final-flags/23b.md)
+
+#### 楔形
+
+- [楔形 (第一部分)](/price/24-wedges/24a.md)
+- [楔形（第二部分）](/price/24-wedges/24b.md)
+- [楔形（第三部分）](/price/24-wedges/24c.md)
+- [楔形（第四部分）](/price/24-wedges/24d.md)
+- [失败的楔形 (Failed Wedges)](/price/24-wedges/24e.md)
+
+#### 双顶和双底
+
+- [双顶与双底（第一部分）](/price/25-double-tops-bottoms/25a.md)
+- [双顶与双底（第二部分）](/price/25-double-tops-bottoms/25b.md)
+
+#### 三角形
+
+- [三角形（第一部分）](/price/26-triangles/26a.md)
+- [三角形（第二部分）：扩张三角形与形态质量](/price/26-triangles/26b.md)
+
+#### 头肩形态
+
+- [头肩形态（第一部分）](/price/27-head-shoulders/27a.md)
+- [头肩形态与市场心理（第二部分）](/price/27-head-shoulders/27b.md)
+
+#### 高潮
+
+- [高潮（第一部分）](/price/29-climaxes/29a.md)
+- [高潮（第二部分）：V 形反转与交易者心理](/price/29-climaxes/29b.md)
+- [高潮形态与交易（第三部分）](/price/29-climaxes/29c.md)
+- [高潮（第四部分）：连续高潮与市场心理](/price/29-climaxes/29d.md)
+- [高潮的成因与失败形态 (第五部分)](/price/29-climaxes/29e.md)
+
+### 如何交易
+
+#### 交易设置
+
+- [交易的数学基础：数学期望与概率](/price/30-trading-setups/30a.md)
+- [数学期望与概率](/price/30-trading-setups/30b.md)
+- [数学期望与概率（第三部分）](/price/30-trading-setups/30c.md)
+- [数学期望与概率（第四部分）](/price/30-trading-setups/30d.md)
+- [数学期望与概率（第五部分）](/price/30-trading-setups/30e.md)
+
+#### 交易入场
+
+- [波段交易 vs. 剥头皮交易 (第一部分)](/price/31-trading-entries/31a.md)
+- [波段交易 vs. 剥头皮交易：定义、管理与心态](/price/31-trading-entries/31b.md)
+- [剥头皮交易与最小利润目标（第三部分）](/price/31-trading-entries/31c.md)
+- [波段与剥头皮的动态管理 (第四部分)](/price/31-trading-entries/31d.md)
+
+#### 交易出场
+
+- [交易订单基础](/price/32-trading-exits/32a.md)
+- [交易订单类型：突破单 vs. 限价单](/price/32-trading-exits/32b.md)
+- [订单类型与价格行为 (第三部分)](/price/32-trading-exits/32c.md)
+
+#### 保护性止损
+
+- [保护性止损 (第一部分)](/price/33-protective-stops/33a.md)
+- [保护性止损（第二部分）](/price/33-protective-stops/33b.md)
+- [保护性止损与追踪](/price/33-protective-stops/33c.md)
+- [止损与前提的转变](/price/33-protective-stops/33d.md)
+- [宽止损策略](/price/33-protective-stops/33e.md)
+- [保护性止损策略（第六部分）](/price/33-protective-stops/33f.md)
+- [保护性止损策略：保本、回测与剥头皮](/price/33-protective-stops/33g.md)
+
+#### 实际风险
+
+- [实际风险与初始风险 (第一部分)](/price/34-actual-risk/34a.md)
+- [实际风险与利润目标](/price/34-actual-risk/34b.md)
+
+#### 分批入场
+
+- [分批入场导论（](/price/35-scaling-in/35a.md)
+- [浮亏时加仓（加仓第二部分）](/price/35-scaling-in/35b.md)
+- [加仓策略示例](/price/35-scaling-in/35c.md)
+
+#### 交易管理
+
+- [交易管理与止盈（第一部分）](/price/36-trade-management/36a.md)
+- [交易管理与止盈的默认标准](/price/36-trade-management/36b.md)
+
+### 总结
+
+- [[价格行为学全家桶指标](https://tw.tradingview.com/script/n78QYp0G-Price-Action-All-In-One/)](/price/price-action-all-in-one.md)
+
+### 其他资源
+
+#### MES回顾
+
+- [详解Al Brooks价格行为交易图例：Emini 5分钟图表分析](/price/mes-recap/20250307.md)
+- [Brooks风格解读：E-mini 5分钟熊市趋势图表分析](/price/mes-recap/20250310.md)
+- [Brooks风格解读：E-mini 5分钟微型双顶与日间反转](/price/mes-recap/20250311.md)
+- [Brooks风格解读：E-mini 5分钟卖方高潮与反转上涨后的交易区间](/price/mes-recap/20250312.md)
+- [Brooks风格解读：E-mini 5分钟卖方高潮、多方高潮与双顶形态](/price/mes-recap/20250313.md)
+- [Brooks价格行为分析：E-mini 5分钟图的双底启动小回调牛市趋势](/price/mes-recap/20250314.md)
+- [Brooks价格行为分析：E-mini 5分钟图的牛市陷阱与双底反转](/price/mes-recap/20250317.md)
+- [Brooks价格行为分析：E-mini 5分钟图的开盘熊市趋势与交易区间](/price/mes-recap/20250318.md)
+- [Brooks价格行为分析：E-mini 5分钟图的抛物线楔形顶部失败与交易区间](/price/mes-recap/20250319.md)
+- [Brooks价格行为分析：E-mini 5分钟图的开盘多头趋势转空头通道](/price/mes-recap/20250320.md)
+- [Brooks价格行为分析：E-mini 5分钟图的较低低点双底与多头通道](/price/mes-recap/20250321.md)
+- [E迷你5分钟图表: 交易区间后的牛市突破分析](/price/mes-recap/20250409.md)
+- [E迷你5分钟图表: 更低高点双顶形态与卖出高潮分析](/price/mes-recap/20250410.md)
+- [E迷你5分钟图表: 交易区间开盘、突破及后续牛市通道分析](/price/mes-recap/20250411.md)
+
+#### 问答总结
+
+- [关于流动性猎取](/price/qa-summary/about-liquidity-grab.md)
+
+
+### 面向对象
+
+- [javaobject](/java/object/javaobject.md)
+
+
+### 集合专题
+
+- [集合](/java/collection/javajihe.md)
+
+
+### 专题精讲
+
+- [线程](/java/special/javaapi.md)
+
+
+### 学习Java
+
+- [javabase](/java/base/javabase.md)
+
+### Other
+
+- [arch](/arch/arch.md)
+- [Untitled](/yx.md)

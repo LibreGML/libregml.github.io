@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+Sitemap: https://libregml.github.io/sitemap.xml
