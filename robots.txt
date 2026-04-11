@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+
+# Sitemap 位置
+Sitemap: https://libregml.github.io/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+Googlebot-Image: Allow
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
