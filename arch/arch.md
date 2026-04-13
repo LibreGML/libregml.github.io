@@ -636,6 +636,49 @@ export http_proxy='http://127.0.0.1:7897'
 export https_proxy='http://127.0.0.1:7897'
 ```
 
+### 4.4 yay时SSL连接失败
+
+假设出现如下报错
+
+```
+git clone https://aur.archlinux.org/termius.git 
+Cloning into 'termius'...
+fatal: unable to access 'https://aur.archlinux.org/termius.git/ ': TLS connect error: error:0A000126:SSL routines::unexpected eof while reading
+```
+
+```
+21:44:38.449107 http.c:890              == Info: Could not find host aur.archlinux.org in the .netrc file; using defaults
+21:44:38.452213 http.c:890              == Info: Host aur.archlinux.org:443 was resolved.
+21:44:38.452255 http.c:890              == Info: IPv6: 2604:cac0:a104:d::2
+21:44:38.452266 http.c:890              == Info: IPv4: 209.126.35.78
+21:44:38.452322 http.c:890              == Info:   Trying [2604:cac0:a104:d::2]:443...
+21:44:38.454997 http.c:890              == Info: ALPN: curl offers h2,http/1.1
+21:44:38.455711 http.c:890              == Info: TLSv1.3 (OUT), TLS handshake, Client hello (1):
+21:44:38.455861 http.c:890              == Info: SSL Trust Anchors:
+21:44:38.479719 http.c:890              == Info:   CAfile: /etc/ssl/certs/ca-certificates.crt
+```
+
+这是因为默认IPv6 优先连接，而GFW对ipv6有干扰，因此要禁用ipv6
+
+```
+sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
+sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
+```
+
+可以持久化这个配置
+
+```
+sudo tee /etc/sysctl.d/99-disable-ipv6.conf << 'EOF'
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 0
+EOF
+
+
+sudo sysctl --system
+
+```
+
 ***
 
 ## 内核管理
