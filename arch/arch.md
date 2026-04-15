@@ -1291,6 +1291,11 @@ sudo systemctl enable --now cups
 
 1. `sudo pacman -S hplip hplip-plugin`
 2. 进入[CUPS配置界面](http://localhost:631/admin), 点击 **Add Printer**, 看到Local Printers有个HP Printer (HPLIP) ， 继续后输入打印机的IP地址，比如http://10.10.84.25，名字那些随便填， 继续后，Make里面选择HP, 继续后可以看到驱动列表， 找`HP LaserJet M1536dnf MFP Postscript (en, en, da, de, es, fi, fr, it, ja, ko, nb, nl, pt, ru, sv, zh_CN, zh_TW) `, 选中后Add Printer即可。
+3. 扫描功能安装 `sudo pacman -Sy sane sane-airscan libinsane simple-scan`, 把用户添加进scanner组 `sudo usermod -aG scanner,lp $USER`。
+4. `hp-makeuri 10.10.84.25`， 生成设备 URI，会输出`SANE URI: hpaio:/net/HP_LaserJet_M1536dnf_MFP?ip=10.10.84.25`
+5. `sudo hp-setup -i 10.10.84.25` ，添加打印机
+6. `scanimage --device-name="hpaio:/net/HP_LaserJet_M1536dnf_MFP?ip=10.10.84.25" --format=png > ~/scan.png` , 测试打印， 这时候会有点糊。
+7. 成功之后换simple-scan, 就能看到设备了，点左上角Scan。
 
 ***
 
