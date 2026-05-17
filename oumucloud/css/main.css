@@ -1,0 +1,397 @@
+/* ============================================
+   欧穆云官网 - 主样式文件
+   版本: 2.0
+   最后更新: 2025
+   ============================================ */
+
+/* --------------------------------------------
+   1. 全局基础样式
+   -------------------------------------------- */
+* {
+  font-family: btfFont;
+  font-weight: 400;
+}
+
+body {
+  background-color: #fcfcfd;
+}
+
+a {
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+p {
+  line-height: 2;
+  font-size: 15px;
+}
+
+/* --------------------------------------------
+   2. 通用工具类
+   -------------------------------------------- */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-big {
+  font-size: 40px;
+}
+
+.margin-top {
+  margin-top: 110px;
+}
+
+.margin-lr {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.margin-lrb {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.padding {
+  padding: 2em;
+}
+
+.radius {
+  border-radius: 8px !important;
+}
+
+.text-underline {
+  height: 10px !important;
+  background-color: #8799ff !important;
+  width: 50px !important;
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+}
+
+/* --------------------------------------------
+   3. 动画效果
+   -------------------------------------------- */
+@keyframes updown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --------------------------------------------
+   4. 品牌标题样式
+   -------------------------------------------- */
+.oumuyun {
+  position: relative;
+  background-image: -webkit-linear-gradient(left, #4490ff, #b16aff, #1478f5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: updown 1s forwards;
+  letter-spacing: 1px;
+  font-weight: 900;
+  margin-bottom: 7em;
+  top: 5em;
+}
+
+/* --------------------------------------------
+   5. 导航栏样式
+   -------------------------------------------- */
+.nav-fixed {
+  width: 100vw !important;
+  top: 0 !important;
+  position: fixed !important;
+  z-index: 929 !important;
+  opacity: 0.85 !important;
+}
+
+.layui-nav .layui-this:after,
+.layui-nav-bar {
+  background-color: #8a99f0 !important;
+}
+
+.layui-this a {
+  color: #8a99f0 !important;
+}
+
+/* --------------------------------------------
+   6. Banner 视频背景
+   -------------------------------------------- */
+.banner-video {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  max-height: 750px;
+}
+
+.banner-video video {
+  width: 100vw;
+}
+
+.bottom-cover {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0px;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0) 0%,
+    rgb(244 248 251 / 0.6) 50%,
+    rgb(244 248 251) 100%
+  );
+}
+
+#about {
+  position: relative;
+}
+
+/* --------------------------------------------
+   7. 表单样式
+   -------------------------------------------- */
+.layui-input:focus,
+.layui-textarea:focus {
+  border-color: #276dff !important;
+  box-shadow: 0 0 0 0.3px rgb(31 93 255 / 100%) !important;
+}
+
+.layui-form-select dl dd.layui-this {
+  color: #3ca5f3 !important;
+}
+
+.layui-form-onswitch {
+  border-color: #fff !important;
+  background-color: #00a1ff !important;
+}
+
+.layui-form-radio:hover > *,
+.layui-form-radioed,
+.layui-form-radioed > i {
+  color: #5557fb !important;
+}
+
+.upload {
+  color: #5486ff !important;
+}
+
+/* --------------------------------------------
+   8. 引用块样式
+   -------------------------------------------- */
+.layui-elem-quote {
+  font-size: 12.5px !important;
+  border-left: 5px solid #6bc1ff !important;
+}
+
+/* --------------------------------------------
+   9. 日期选择器样式
+   -------------------------------------------- */
+.layui-laydate .layui-this,
+.layui-laydate .layui-this > div {
+  background-color: #6bc1ff !important;
+}
+
+.layui-laydate-range {
+  width: auto !important;
+}
+
+.layui-laydate-range .layui-laydate-main {
+  display: block !important;
+  max-width: 100% !important;
+}
+
+/* --------------------------------------------
+   10. 页脚样式
+   -------------------------------------------- */
+.footer {
+  background-color: #fbfbfb;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 2;
+  border-top: #e5e5e5 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p > .beian {
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+.weixin {
+  width: 125px;
+  height: 105px;
+}
+
+/* --------------------------------------------
+   11. 固定工具栏样式
+   -------------------------------------------- */
+.layui-fixbar li {
+  background-color: #4ebafb !important;
+}
+
+.layui-fixbar li:hover {
+  opacity: 0.65 !important;
+}
+
+/* --------------------------------------------
+   12. 响应式设计 - 移动端适配
+   -------------------------------------------- */
+
+/* 平板和小屏设备 (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  footer p {
+    font-size: 13px;
+  }
+
+  .margin-top {
+    font-size: 20px;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+
+  .layui-colla-title {
+    font-size: 12px !important;
+  }
+
+  .layui-colla-content {
+    font-size: 12px !important;
+  }
+
+  .layui-colla-content p {
+    font-size: 12px !important;
+  }
+
+  .layui-panel p {
+    font-size: 12.65px !important;
+  }
+}
+
+/* 小屏手机 (max-width: 449px) */
+@media screen and (max-width: 449px) {
+  footer p {
+    font-size: 12px;
+  }
+
+  .footer {
+    font-size: 13px;
+  }
+
+  .font-big {
+    font-size: 27px !important;
+  }
+
+  .layui-card-header {
+    font-size: 13.7px;
+  }
+
+  .layui-card-body {
+    font-size: 12px;
+  }
+}
+
+/* 超小屏手机 (max-width: 368px) */
+@media screen and (max-width: 368px) {
+  .layui-panel p {
+    font-size: 10px !important;
+  }
+
+  .font-big {
+    font-size: 21px !important;
+  }
+
+  .layui-nav * {
+    font-size: 12px !important;
+  }
+
+  .layui-card-header {
+    font-size: 12px !important;
+  }
+
+  .layui-card-body {
+    font-size: 10px;
+  }
+
+  .layui-colla-title {
+    font-size: 11px !important;
+  }
+
+  .layui-colla-content {
+    font-size: 10px !important;
+  }
+
+  .margin-top {
+    font-size: 16px;
+  }
+
+  .layui-form-pane .layui-form-label {
+    width: 80px !important;
+    padding: 8px !important;
+    line-height: 18px !important;
+    font-size: 11px !important;
+  }
+
+  .layui-input,
+  .layui-textarea {
+    display: block !important;
+    width: 100% !important;
+    padding-left: 7px !important;
+    font-size: 11px !important;
+  }
+
+  .layui-form-radio > * {
+    font-size: 11px !important;
+  }
+
+  .layui-upload-drag {
+    font-size: 12px;
+  }
+
+  .layui-btn-primary {
+    font-size: 11px !important;
+  }
+
+  .weixintext {
+    font-size: 14px;
+  }
+
+  footer p {
+    font-size: 9.1px !important;
+  }
+
+  .footspan {
+    font-size: 11px;
+  }
+
+  .layui-form-item .layui-input-inline {
+    margin: 0 0 10px 82px !important;
+  }
+
+  .layui-form-item .layui-input-inline + .layui-form-mid {
+    margin-left: 0px !important;
+    top: 0px !important;
+  }
+
+  .layui-form-switch > div {
+    font-size: 11px !important;
+  }
+}
+
+/* 极小屏设备 (max-width: 320px) */
+@media screen and (max-width: 320px) {
+  .layui-elem-quote {
+    font-size: 11px !important;
+  }
+}

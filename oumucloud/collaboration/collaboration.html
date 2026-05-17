@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>欧穆云软件科技合作中心-葛墨林</title>
+    <link rel="icon" href="../src/icon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="徐州欧穆云软件科技合伙企业官网-专业提供软件外包"
+    />
+    <meta
+      name="keywords"
+      content="软件,外包,科技,网络,游戏,嵌入式,物联网,企业,APP,web,网站,机器人,AI,人工智能,小程序,微信,QQ,硬件,系统,IOS,Android,Linux,Windows,抖音"
+    />
+    <meta name="author" content="葛墨林" />
+    <link rel="canonical" href="https://libregml.github.io" />
+    <!-- 避免重复内容，指定首选URL -->
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- 指定页面类型 -->
+    <meta property="og:url" content="https://libregml.github.io" />
+    <!-- 页面URL -->
+    <meta
+      property="og:title"
+      content="The official website of Xuzhou Oumuyun Software Technology Partnership"
+    />
+    <!-- 页面标题 -->
+    <meta
+      property="og:description"
+      content="Xuzhou Oumuyun Software Technology Partnership specializes in providing software outsourcing services, is committed to the digital transformation and upgrading of all governments, enterprises and schools, and provides high-quality software development full-process services"
+    />
+    <!-- 页面描述 -->
+    <meta property="og:image" content="./src/metaimg.jpg" />
+    <!-- 页面相关图片 -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- Twitter卡片类型 -->
+    <meta property="twitter:url" content="https://libregml.github.io" />
+    <!-- 页面URL -->
+    <meta
+      property="twitter:title"
+      content="The official website of Xuzhou Oumuyun Software Technology Partnership"
+    />
+    <!-- 页面标题 -->
+    <meta
+      property="twitter:description"
+      content="Xuzhou Oumuyun Software Technology Partnership specializes in providing software outsourcing services, is committed to the digital transformation and upgrading of all governments, enterprises and schools, and provides high-quality software development full-process services"
+    />
+    <!-- 页面描述 -->
+    <meta property="twitter:image" content="./src/metaimg.jpg" />
+    <!-- 页面相关图片 -->
+
+    <style>
+      * {
+        font-family: btfFont;
+        font-weight: 400;
+      }
+
+      /* 鼠标划过导航栏底部滑出蓝色横杠 */
+      .layui-nav .layui-this:after,
+      .layui-nav-bar {
+        background-color: #8a99f0 !important;
+      }
+
+      /* 导航栏固定在页面顶部 */
+      .nav-fixed {
+        width: 100vw !important;
+        top: 0 !important;
+        position: fixed !important;
+        z-index: 929 !important;
+        opacity: 0.85 !important;
+      }
+
+      .layui-this a {
+        color: #8a99f0 !important;
+      }
+
+      /* 合作列表面板样式 */
+      .margintop {
+        margin-top: 16em;
+      }
+
+      /* 每段标题样式 */
+
+      #collaboration {
+        font-size: 18px;
+      }
+
+      .text-right {
+        text-align: right;
+      }
+
+      .text-underline {
+        height: 10px !important;
+        background-color: #8799ff !important;
+        width: 50px !important;
+        margin-top: 10px !important;
+        margin-bottom: 15px !important;
+      }
+
+      .margin-lr {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+
+      .radius {
+        border-radius: 8px !important;
+      }
+
+      .padding {
+        padding: 2em;
+      }
+
+      /* 表单下拉菜单字体为蓝色 */
+      .layui-form-select dl dd.layui-this {
+        color: #3ca5f3 !important;
+      }
+
+      /* 文件上传框图标呈蓝色 */
+      .upload {
+        color: #5486ff !important;
+      }
+
+      /* 表单选择按钮呈蓝色 */
+      .layui-form-onswitch {
+        border-color: #fff !important;
+        background-color: #00a1ff !important;
+      }
+
+      /* 脚注复选框呈蓝色 */
+      .layui-form-radio:hover > *,
+      .layui-form-radioed,
+      .layui-form-radioed > i {
+        color: #5557fb !important;
+      }
+
+      /* 表单点击后呈蓝色边框 */
+      .layui-input:focus,
+      .layui-textarea:focus {
+        border-color: #276dff !important;
+        box-shadow: 0 0 0 0.3px rgb(31 93 255 / 100%) !important;
+      }
+
+      /* 合作表单模块上边距 */
+      .margin-top {
+        margin-top: 1em;
+      }
+
+      /* 合作表单标题字体大小 */
+      #joinus,
+      #collaboration {
+        font-size: 18px;
+      }
+
+      /* 联系方式模块中的引用左边框颜色改成蓝色 */
+      .layui-elem-quote {
+        border-left: 5px solid #6bc1ff !important;
+      }
+
+      .layui-laydate .layui-this,
+      .layui-laydate .layui-this > div {
+        background-color: #6bc1ff !important;
+      }
+
+      /* 移动端适配 */
+      @media screen and (max-width: 490px) {
+        .layui-elem-field legend {
+          font-size: 15px !important;
+        }
+
+        /* 面板字体大小 */
+        .layui-panel {
+          font-size: 11px !important;
+        }
+
+        /* 折叠面板字体大小 */
+        .layui-colla-title {
+          font-size: 11px !important;
+        }
+
+        /* 单选框字体*/
+        .layui-form-radio > * {
+          font-size: 11px !important;
+        }
+
+        /* 表单按钮字体大小 */
+        .layui-btn {
+          font-size: 12px !important;
+        }
+
+        .padding {
+          padding: 12px;
+        }
+
+        /* 标题大小 */
+        #joinus,
+        #collaboration {
+          font-size: 16px;
+        }
+
+        /* 头部导航栏字体大小 */
+        .layui-nav * {
+          font-size: 13px !important;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="../layui/css/layui.css" />
+  </head>
+
+  <body>
+    <!-- 头部导航栏开始 -->
+    <ul class="layui-nav layui-bg-gray layui-nav-child-c text-center nav-fixed">
+      <li class="layui-nav-item layui-this">
+        <a href="../index.html">欧穆首页</a>
+      </li>
+
+      <li class="layui-nav-item">
+        <a href="../index.html#collaboration">合作洽谈</a>
+        <dl class="layui-nav-child">
+          <dd><a href="#collaboration">一起合作</a></dd>
+          <dd><a href="#joinus">加入欧穆</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item">
+        <a href="../index.html#contact">联系我们</a>
+        <dl class="layui-nav-child">
+          <dd><a href="../index.html#demand">提交需求</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item"><a href="../index.html#about">关于欧穆</a></li>
+    </ul>
+    <!-- 头部导航栏结束 -->
+
+    <div class="layui-panel margin-lr padding radius margintop">
+      <h1 class="margin-lrb margin-top" id="collaboration">关于我们</h1>
+      <hr class="text-underline margin-lrb" />
+      <br />
+      <fieldset class="layui-elem-field layui-field-title">
+        <legend>1.与我们合作</legend>
+      </fieldset>
+      实施互利共赢开放战略是企业向前发展的历史逻辑 <br />
+      是共创企业美好未来的必由之路<br />
+      是深化发展的内在要求,实现企业强大的根本之道<br />
+      欧穆云始终坚持开放包容、公道正义、聚力同行、合作共赢<br />
+      欧穆云愿与合作伙伴平等互惠，互利共赢，互相帮扶<br />
+      支持各种合作关系的自定义与扩展，为合作伙伴带来良好效益。
+      <br /><br /><br /><br />
+      <fieldset class="layui-elem-field layui-field-title">
+        <legend>2.成为我们的一员</legend>
+      </fieldset>
+      欧穆云以"自由 平等 民主 共和"为根本理念<br />
+      以"开放 包容 和谐 共赢"为行动准则<br />
+      为所有合伙人创造体验极佳的现代化团队氛围<br />
+      成为欧穆云的合伙人，意味着共享收益，共担责任<br />
+      有一定技术能力，承担相应的职责，同意企业政策与路线<br />
+      即可成为我们的一员，我们非常需要您，期待您的加入
+
+      <br /><br /><br /><br />
+    </div>
+
+    <!-- 合作模块开始 -->
+    <div
+      class="layui-panel margin-lr padding radius"
+      style="margin-top: 3em !important"
+    >
+      <blockquote class="layui-elem-quote">合作形式</blockquote>
+
+      <!-- 经济合作模块开始 -->
+      <div class="layui-collapse" lay-accordion>
+        <div class="layui-colla-item">
+          <div class="layui-colla-title">经济合作模式</div>
+          <div class="layui-colla-content layui-show">
+            <div class="layui-collapse" lay-accordion>
+              <div class="layui-colla-item">
+                <div class="layui-colla-title">
+                  将繁多的外包项目转包给欧穆云
+                </div>
+                <div class="layui-colla-content">
+                  将做不完、做不了的项目，转包给本企<br />
+                  分成好商量，最多五五分，其次三七分，合作共赢。
+                </div>
+              </div>
+
+              <div class="layui-colla-item">
+                <div class="layui-colla-title">将产品的开发工序分包给本企</div>
+                <div class="layui-colla-content">
+                  将软件产品项目的部分或全部工序外包给本企<br />
+                  大幅度减少人力成本，聚焦核心业务<br />
+                  省钱省力省时，欧穆云就是你们的廉价开发团队！
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <div class="layui-colla-title">寻找合作中介</div>
+                <div class="layui-colla-content">
+                  欢迎软件中介二次转包项目给本企<br />
+                  不光可以赚取差价，本企会给中介大额返点<br />
+                  单额越大，返点越多。
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <div class="layui-colla-title">本企作为中介</div>
+                <div class="layui-colla-content">
+                  本企作为中介，拿到的项目会转包给合作伙伴<br />
+                  不要分成，不要返点，只会赚点小差价。
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <div class="layui-colla-title">本企代销售</div>
+                <div class="layui-colla-content">
+                  本企代销售、宣传合作伙伴的产品<br />
+                  如云服务器、APP等一切产品或商品<br />
+                  本企拿微薄销售提成<br />
+                  欧穆云就是你们的廉价销售团队！
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <div class="layui-colla-title">本企提供教学资源与服务</div>
+                <div class="layui-colla-content">
+                  1.本企专业开发人员录制编程课，低价出售<br />
+                  2.本企低价辅导个人或多人编程学习，比市场价更便宜。
+                </div>
+              </div>
+              <div class="layui-colla-item">
+                <div class="layui-colla-title">其他自定义合作关系</div>
+                <div class="layui-colla-content">
+                  在经典合作模式基础上自由定义与扩展<br />
+                  确保各方合作共赢
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 经济合作模块结束 -->
+
+      <!-- 组织关系合作模块开始 -->
+      <div class="layui-collapse" lay-accordion>
+        <div class="layui-colla-item">
+          <div class="layui-colla-title">组织关系合作</div>
+          <div class="layui-colla-content">
+            <div class="layui-collapse" lay-accordion>
+              <div class="layui-colla-item">
+                <div class="layui-colla-title">成为欧穆云的子团队</div>
+                <div class="layui-colla-content">
+                  <div class="layui-collapse" lay-accordion>
+                    <div class="layui-colla-item">
+                      <div class="layui-colla-title">直属子团队</div>
+                      <div class="layui-colla-content">
+                        可直接获得企业资金与平台支持<br />
+                        受企业政策直接指导<br />
+                        运营产品归欧穆云名下
+                      </div>
+                    </div>
+                    <div class="layui-colla-item">
+                      <div class="layui-colla-title">自治子团队</div>
+                      <div class="layui-colla-content">
+                        可申请获得企业的外包项目以获得资金<br />
+                        高度自治，企业无权干涉<br />
+                        运营产品归自身团队所有<br />
+                        企业不承担自治子团队所造成的任何法律责任
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="layui-colla-item">
+                <div class="layui-colla-title">与本企业合并</div>
+                <div class="layui-colla-content">
+                  <div class="layui-collapse" lay-accordion>
+                    <div class="layui-colla-item">
+                      <div class="layui-colla-title">新设合并</div>
+                      <div class="layui-colla-content">
+                        两企业合并设立新公司，合并各方解散
+                      </div>
+                    </div>
+                    <div class="layui-colla-item">
+                      <div class="layui-colla-title">吸收合并</div>
+                      <div class="layui-colla-content">
+                        欧穆云并入其他企业或其他企业并入欧穆，被吸收的公司解散
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="layui-colla-item">
+                <div class="layui-colla-title">组建独立企业联合体</div>
+                <div class="layui-colla-content">
+                  组成战略联盟，多方面联合行动<br />
+                  如共同开发某个产品或项目<br />
+                  或分别承担不同的责任以达成某个目的，共同盈利。<br />
+                  共同与某个企业进行竞争，共享资源，全方面加强交流合作。
+                </div>
+              </div>
+
+              <div class="layui-colla-item">
+                <div class="layui-colla-title">其他自定义合作关系</div>
+                <div class="layui-colla-content">
+                  在经典合作模式基础上自由定义与扩展<br />
+                  本企业支持成立任何形式的社会组织<br />
+                  如学会，协会，论坛，会议，委员会，基金会
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 组织关系合作模块结束 -->
+
+    <!-- 合作表单开始 -->
+
+    <div class="layui-panel margin-lr padding radius">
+      <blockquote class="layui-elem-quote">填写合作表单</blockquote>
+      <div class="layui-padding-6">
+        <form class="layui-form layui-form-pane" action="">
+          <div class="layui-form-item">
+            <div class="layui-inline">
+              <label class="layui-form-label">您的称呼</label>
+              <div class="layui-input-inline">
+                <input
+                  type="text"
+                  name="number"
+                  autocomplete="off"
+                  class="layui-input"
+                  placeholder="可以是虚拟姓氏"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="layui-form-item">
+            <div class="layui-inline">
+              <label class="layui-form-label">联系方式</label>
+              <div class="layui-input-inline">
+                <input
+                  type="text"
+                  name="number"
+                  autocomplete="off"
+                  class="layui-input"
+                  placeholder="电话/微信/QQ"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="layui-form-item" pane>
+            <label class="layui-form-label">您的性别</label>
+            <div class="layui-input-block">
+              <input type="radio" name="sex" value="男" title="男" checked />
+              <input type="radio" name="sex" value="女" title="女" />
+              <input type="radio" name="sex" value="无" title="不透漏" />
+            </div>
+          </div>
+          <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">描述一下您的合作需求</label>
+            <div class="layui-input-block">
+              <textarea
+                placeholder="您想我们如何合作，可以写在这里，或者也可以在下方上传合作合同"
+                class="layui-textarea"
+              ></textarea>
+            </div>
+          </div>
+          <div class="layui-upload-drag" style="display: block" id="upload">
+            <i class="layui-icon layui-icon-upload upload"></i>
+            <div>点击上传您的电子合作合同，或将文件拖拽到此处</div>
+            <div class="layui-hide" id="uploadDemoView">
+              <hr />
+              <img src="" alt="上传成功后渲染" style="max-width: 100%" />
+            </div>
+          </div>
+
+          <input type="hidden" id="img" value="" name="img" />
+
+          <br /><br /><br /><br />
+          <div class="layui-form-item">
+            <button
+              class="layui-btn layui-btn-primary layui-bg-blue"
+              lay-submit
+              lay-filter="demo2"
+            >
+              确认
+            </button>
+            <button
+              type="reset"
+              class="layui-btn layui-btn-primary layui-border-blue"
+            >
+              重置
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- 合作模块结束 -->
+
+    <br /><br /><br /><br />
+
+    <div class="layui-panel margin-lr padding radius">
+      <h1 class="margin-lrb margin-top" id="joinus">加入欧穆</h1>
+      <hr class="text-underline margin-lrb" />
+
+      <div class="layui-padding-6">
+        <form class="layui-form layui-form-pane" action="">
+          <div class="layui-form-item">
+            <div class="layui-inline">
+              <label class="layui-form-label">您的称呼</label>
+              <div class="layui-input-inline">
+                <input
+                  type="text"
+                  name="number"
+                  autocomplete="off"
+                  class="layui-input"
+                  placeholder="可以是虚拟姓氏"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="layui-form-item">
+            <div class="layui-inline">
+              <label class="layui-form-label">联系方式</label>
+              <div class="layui-input-inline">
+                <input
+                  type="text"
+                  name="number"
+                  autocomplete="off"
+                  class="layui-input"
+                  placeholder="电话/微信/QQ"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="layui-form-item" pane>
+            <label class="layui-form-label">您的性别</label>
+            <div class="layui-input-block">
+              <input type="radio" name="sex" value="男" title="男" checked />
+              <input type="radio" name="sex" value="女" title="女" />
+              <input type="radio" name="sex" value="无" title="不透漏" />
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">选择职责</label>
+            <div class="layui-input-inline">
+              <select name="interest" lay-filter="aihao">
+                <option value=""></option>
+                <option value="0">前端</option>
+                <option value="1" selected>后端</option>
+                <option value="2">游戏</option>
+                <option value="3">安卓</option>
+                <option value="4">IOS</option>
+                <option value="5">UI</option>
+                <option value="6">嵌入式</option>
+                <option value="7">销售</option>
+                <option value="8">会计</option>
+                <option value="9">其他</option>
+              </select>
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">自定义职位</label>
+            <div class="layui-input-block">
+              <input
+                type="text"
+                name="title"
+                autocomplete="off"
+                placeholder="请输入"
+                lay-verify="required"
+                class="layui-input"
+              />
+            </div>
+          </div>
+          <div class="layui-form-item" pane>
+            <label class="layui-form-label">选择业务</label>
+            <div class="layui-input-block">
+              <input
+                type="radio"
+                name="sex"
+                value="外包"
+                title="外包"
+                checked
+              />
+              <input type="radio" name="sex" value="产品" title="产品" />
+              <input
+                type="radio"
+                name="sex"
+                value="其它"
+                title="其它"
+                disabled
+              />
+            </div>
+          </div>
+          <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">叙述一下您的技术栈</label>
+            <div class="layui-input-block">
+              <textarea
+                placeholder="介绍一下您掌握的技术与项目地址，或者在下方上传项目源码"
+                class="layui-textarea"
+              ></textarea>
+            </div>
+          </div>
+          <div class="layui-upload-drag" style="display: block" id="upload">
+            <i class="layui-icon layui-icon-upload upload"></i>
+            <div>点击上传您的项目文件/源码，或将文件拖拽到此处</div>
+            <div class="layui-hide" id="uploadDemoView">
+              <hr />
+              <img src="" alt="上传成功后渲染" style="max-width: 100%" />
+            </div>
+          </div>
+
+          <input type="hidden" id="img" value="" name="img" />
+
+          <br /><br /><br /><br />
+          <div class="layui-form-item">
+            <button
+              class="layui-btn layui-btn-primary layui-bg-blue"
+              lay-submit
+              lay-filter="demo2"
+            >
+              确认
+            </button>
+            <button
+              type="reset"
+              class="layui-btn layui-btn-primary layui-border-blue"
+            >
+              重置
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <br /><br /><br /><br /><br />
+    <!-- 脚注部分结束 -->
+    <script src="../layui/layui.js"></script>    
+    <script src="../js/main.js"></script>
+    <script src="../js/nest.js"></script>
+    <script src="../js/sakura.js"></script>
+    <script>
+      layui.use(
+        ["upload", "element", "form", "layer", "jquery", "laydate"],
+        function () {
+          var $ = layui.jquery,
+            form = layui.form,
+            upload = layui.upload,
+            element = layui.element,
+            layer = layui.layer,
+            laydate = layui.laydate;
+          //拖拽上传
+          upload.render({
+            elem: "#upload",
+            url: "/upload", //改成您自己的上传接口
+            accept: "images",
+            done: function (res) {
+              let img = res.data;
+              //将返回的信息设置到隐藏域
+              $("#img").val(img);
+              layer.msg("上传成功");
+            },
+            error: function (res) {
+              //请求异常回调
+              console.log(res);
+            },
+          });
+          laydate.render({
+            elem: "#ID-laydate-range",
+            range: ["#ID-laydate-start-date", "#ID-laydate-end-date"],
+          });
+        },
+      );
+    </script>
+
+    <!-- 页面固定栏样式 -->
+    <style>
+      .layui-fixbar li:hover {
+        opacity: 0.65 !important;
+      }
+
+      .layui-fixbar li {
+        background-color: #4ebafb !important;
+      }
+    </style>
+
+    <!-- 页面右侧固定栏 -->
+    <script>
+      layui.use(function () {
+        var util = layui.util;
+        // 自定义固定条
+        util.fixbar({
+          bars: [
+            {
+              type: "QQ：1778607946",
+              icon: "layui-icon-login-qq",
+            },
+            {
+              type: "微信：暂不公开",
+              icon: "layui-icon-login-wechat",
+            },
+            {
+              type: "电话：暂不公开",
+              icon: "layui-icon-cellphone",
+            },
+            {
+              type: "邮箱：1778607946@qq.com",
+              icon: "layui-icon-release",
+            },
+          ],
+          // bar1: true,
+          // bar2: true,
+          // default: false, // 是否显示默认的 bar 列表 -- v2.8.0 新增
+          // bgcolor: '#393D52', // bar 的默认背景色
+          // css: {right: 100, bottom: 100},
+          // target: '#target-test', // 插入 fixbar 节点的目标元素选择器
+          // duration: 300, // top bar 等动画时长（毫秒）
+          on: {
+            // 任意事件 -- v2.8.0 新增
+            mouseenter: function (type) {
+              layer.tips(type, this, {
+                tips: 4,
+                fixed: true,
+              });
+            },
+            mouseleave: function (type) {
+              layer.closeAll("tips");
+            },
+          },
+          // 点击事件
+          click: function (type) {
+            console.log(this, type);
+            // layer.msg(type);
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

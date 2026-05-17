@@ -1,0 +1,455 @@
+/* ============================================
+   隐私协议和服务条款页面 - 现代化样式文件
+   ============================================ */
+
+/* --------------------------------------------
+   1. 全局基础样式 & CSS 变量
+   -------------------------------------------- */
+@font-face {
+  font-family: btfFont;
+}
+
+:root {
+  /* 浅色主题变量 */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --accent-color: #3b82f6;
+  --accent-hover: #2563eb;
+  --border-color: #e2e8f0;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-primary);
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  color: var(--text-primary);
+  line-height: 1.6;
+  transition: var(--transition);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --------------------------------------------
+   2. 主题切换按钮（现代化设计）
+   -------------------------------------------- */
+.theme-toggle-btn {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+  z-index: 100;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1) rotate(15deg);
+  border-color: var(--accent-color);
+  box-shadow: var(--shadow-md);
+}
+
+.theme-toggle-btn svg {
+  transition: var(--transition);
+  color: var(--text-primary);
+}
+
+.theme-toggle-btn:hover svg {
+  color: var(--accent-color);
+}
+
+/* --------------------------------------------
+   3. 主容器布局
+   -------------------------------------------- */
+main {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.05) 0%,
+    rgba(118, 75, 162, 0.05) 100%
+  );
+}
+
+.terms-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(10px);
+  transition: var(--transition);
+}
+
+.terms-container:hover {
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* --------------------------------------------
+   4. 标题区域样式
+   -------------------------------------------- */
+.terms-title {
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 2rem 0 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 3px solid transparent;
+  background: var(--gradient-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.025em;
+}
+
+.terms-date {
+  text-align: right;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  background: rgba(59, 130, 246, 0.05);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--accent-color);
+}
+
+/* --------------------------------------------
+   5. 章节标题样式
+   -------------------------------------------- */
+.terms-container section {
+  margin-bottom: 3rem;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.terms-container h2 {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--border-color);
+  position: relative;
+  transition: var(--transition);
+}
+
+.terms-container h2::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: var(--gradient-primary);
+  transition: var(--transition);
+}
+
+.terms-container h2:hover::after {
+  width: 100px;
+}
+
+/* --------------------------------------------
+   6. 段落和列表样式优化
+   -------------------------------------------- */
+.terms-container p {
+  text-indent: 2em;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  transition: var(--transition);
+}
+
+.terms-container p:hover {
+  color: var(--text-primary);
+}
+
+.terms-container ul {
+  margin: 1.5rem 0 1.5rem 2.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.terms-container ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.terms-container ul li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+  transition: var(--transition);
+}
+
+.terms-container ul li:hover {
+  color: var(--text-primary);
+  transform: translateX(5px);
+}
+
+.terms-container ul li:hover::before {
+  color: var(--accent-hover);
+}
+
+/* --------------------------------------------
+   7. 页脚样式
+   -------------------------------------------- */
+footer {
+  margin-top: 4rem !important;
+  padding-top: 2rem;
+  border-top: 2px solid var(--border-color);
+  text-align: right;
+}
+
+footer h4 {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+footer h4:last-child {
+  margin-bottom: 0;
+}
+
+footer h4:hover {
+  color: var(--accent-color);
+}
+
+/* --------------------------------------------
+   8. 动画效果
+   -------------------------------------------- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 章节交错动画延迟 */
+.terms-container section:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.terms-container section:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.terms-container section:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.terms-container section:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.terms-container section:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+/* --------------------------------------------
+   9. 夜间模式样式（增强版）
+   -------------------------------------------- */
+body.dark-mode {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --accent-color: #60a5fa;
+  --accent-hover: #3b82f6;
+  --border-color: #334155;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md:
+    0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg:
+    0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode main {
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.8) 0%,
+    rgba(30, 41, 59, 0.8) 100%
+  );
+}
+
+body.dark-mode .terms-date {
+  background: rgba(96, 165, 250, 0.1);
+}
+
+body.dark-mode .theme-toggle-btn svg {
+  color: var(--text-primary);
+}
+
+/* --------------------------------------------
+   10. 响应式设计（移动端适配）
+   -------------------------------------------- */
+@media screen and (max-width: 768px) {
+  main {
+    padding: 1rem 0.5rem;
+  }
+
+  .terms-container {
+    padding: 2rem 1.5rem;
+    width: 95vw;
+    border-radius: var(--radius-md);
+  }
+
+  .terms-title {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 0.75rem;
+  }
+
+  .terms-date {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .terms-container h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .terms-container p {
+    font-size: 0.9rem;
+    text-indent: 1.5em;
+  }
+
+  .terms-container ul {
+    margin-left: 1.5rem;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 3rem !important;
+  }
+
+  footer h4 {
+    font-size: 0.9rem;
+  }
+
+  .theme-toggle-btn {
+    width: 45px;
+    height: 45px;
+    left: 5% !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .terms-container {
+    padding: 1.5rem 1rem;
+    width: 98vw;
+  }
+
+  .terms-title {
+    font-size: 1.25rem;
+  }
+
+  .terms-container h2 {
+    font-size: 1.1rem;
+  }
+
+  .terms-container p {
+    font-size: 0.85rem;
+    line-height: 1.7;
+  }
+
+  .terms-container ul li {
+    font-size: 0.85rem;
+  }
+
+  footer h4 {
+    font-size: 0.85rem;
+  }
+}
+
+/* --------------------------------------------
+   11. 打印样式优化
+   -------------------------------------------- */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .terms-container {
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+
+  .theme-toggle-btn {
+    display: none;
+  }
+
+  main {
+    background: white;
+  }
+}
+
+/* --------------------------------------------
+   12. 辅助类和特殊效果
+   -------------------------------------------- */
+/* 链接悬停效果 */
+.terms-link {
+  cursor: default;
+}
+
+/* 平滑滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 选中文本样式 */
+::selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: var(--text-primary);
+}
+
+::-moz-selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: var(--text-primary);
+}
